@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- jQuery Library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>Great Cliffs of California</title>
+  </head>
+  <body id="activities">
+    <header>
+      <div class="navbar-main sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <div class="logo">
+              <a class="navbar-brand" href="#"
+                ><img class="" src="images/logo.png"
+              /></a>
+            </div>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-end"
+              id="navbarNav"
+            >
+              <div class="main-menu">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item"><a href="cliffs.html">Cliffs</a></li>
+                  <li class="nav-item active">
+                    <a href="activities.html">Activities</a>
+                  </li>
+                  <li class="nav-item"><a href="contact.html">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="row">
+          <h1>Activities</h1>
+          <p>
+            There are many planned activities at all the cliff sites. Some are
+            scheduled daily, weekly, monthly and yearly. These activities are
+            not however run by the state park and recreational department. They
+            are operated and manage by private vendors but are partners with the
+            state department. Therefore, for schedule inquiries or information,
+            please contact them directly. For a list of activities, please refer
+            to the table below:
+          </p>
+        </div>
+
+        <div class="row carousel">
+          <div
+            id="carouselControls"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="images/activity-images/biking.jpg"
+                  class="d-block w-100"
+                  alt="biking"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="images/activity-images/hiking.jpg"
+                  class="d-block w-100"
+                  alt="hiking"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="images/activity-images/skydiving.jpg"
+                  class="d-block w-100"
+                  alt="skydiving"
+                />
+              </div>
+            </div>
+            <div
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselControls"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </div>
+            <div
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselControls"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th scope="col">Activity</th>
+                <th scope="col">West Cliff</th>
+                <th scope="col">North Cliff</th>
+                <th scope="col">East Cliff</th>
+                <th scope="col">South Cliff</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Hiking</td>
+                <td>College Hikes</td>
+                <td>Family Fun</td>
+                <td>Treasure Trails</td>
+                <td>Canyon Explorer</td>
+              </tr>
+              <tr>
+                <td>Kayak</td>
+                <td>Western Kayak Meetup</td>
+                <td>Not Available</td>
+                <td>Youth Kayaking</td>
+                <td>Kayak Down</td>
+              </tr>
+              <tr>
+                <td>Skydiving</td>
+                <td>Seacliff Diving</td>
+                <td>Sky is the Limit</td>
+                <td>Not Available</td>
+                <td>Sky Diving for Beginners</td>
+              </tr>
+              <tr>
+                <td>Biking</td>
+                <td>Bicycle for One</td>
+                <td>Not Available</td>
+                <td>Bike Meetup Group</td>
+                <td>Not Available</td>
+              </tr>
+              <tr>
+                <td>Camping</td>
+                <td>Youth Camp</td>
+                <td>Rent a Tent</td>
+                <td>Campground Adventure</td>
+                <td>Sunset Camping</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="row">
+          <div id="displaySelected">
+            <div id="result">
+              <h4>My selected activities to enquire:</h4>
+            </div>
+            <div id="sendinfo"></div>
+            <!-- Button trigger modal -->
+            <button
+              type="button"
+              class="btn btn-primary btn-lg"
+              data-toggle="modal"
+              data-target="#ModalLoginForm"
+            >
+              Get Info
+            </button>
+            <div id="ModalLoginForm" class="modal fade">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title">Send Me Info</h1>
+                  </div>
+                  <div class="modal-body">
+                    <form role="form" method="POST" action="">
+                      <input type="hidden" name="_token" value="" />
+                      <div class="form-group">
+                        <label class="control-label">Name</label>
+                        <div>
+                          <input
+                            type="text"
+                            class="form-control input-lg"
+                            name="name"
+                            value=""
+                          />
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="control-label">E-Mail Address</label>
+                        <div>
+                          <input
+                            type="email"
+                            class="form-control input-lg"
+                            name="email"
+                            value=""
+                          />
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="modal-button">
+                          <button type="submit" class="btn btn-primary">
+                            Register
+                          </button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <section>
+      <div id="partners">
+        <div class="container">
+          <div class="row gy-4">
+            <div class="col-sm-12 col-md-4 col-lg-2">
+              <div class="partner">
+                <img
+                  src="images/partners/partner-1.png"
+                  alt="Partner Bus Tours"
+                />
+              </div>
+            </div>
+
+            <div class="col-sm-12 col-md-4 col-lg-2">
+              <div class="partner">
+                <img
+                  src="images/partners/partner-2.png"
+                  alt="Partner Cabin Rental"
+                />
+              </div>
+            </div>
+
+            <div class="col-sm-12 col-md-4 col-lg-2">
+              <div class="partner">
+                <img
+                  src="images/partners/partner-3.png"
+                  alt="Partner Camping Adventure"
+                />
+              </div>
+            </div>
+
+            <div class="col-sm-12 col-md-4 col-lg-2">
+              <div class="partner">
+                <img
+                  src="images/partners/partner-4.png"
+                  alt="Partner College Tours"
+                />
+              </div>
+            </div>
+
+            <div class="col-sm-12 col-md-4 col-lg-2">
+              <div class="partner">
+                <img
+                  src="images/partners/partner-5.png"
+                  alt="Partner Bike Rentals"
+                />
+              </div>
+            </div>
+
+            <div class="col-sm-12 col-md-4 col-lg-2">
+              <div class="partner">
+                <img
+                  src="images/partners/partner-6.png"
+                  6
+                  alt="Partner Tour Group"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div id="nondisclaimer">
+            <div class="copy">&copy; Copyright 2020 :: GreatCliffs.com</div>
+            <div class="social">
+              <a href="#" class="fa fa-facebook"></a>
+              <a href="#" class="fa fa-instagram"></a>
+              <a href="#" class="fa fa-twitter"></a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div id="disclaimer">
+            <p>
+              This website is designed and created solely for educational
+              purposes only at Westcliff University. All contents are not
+              intended for any commercial gain or use.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
+      integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
+      integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

@@ -1,0 +1,355 @@
+/* Header */
+header {
+  width: 100%;
+  min-height: 400px;
+  padding-top: 3em;
+}
+#home header {
+  background: no-repeat lightgrey url(images/cliff_ocean.jpg);
+  background-size: 1500px;
+}
+#cliffs header {
+  background: no-repeat lightgrey url(images/forest_cliff.jpg);
+  background-size: 1500px;
+}
+#activities header {
+  background: no-repeat lightgrey url(images/runfly.jpg);
+  background-size: 1500px;
+}
+#contact header {
+  background: no-repeat lightgrey url(images/cliff_rock.jpg);
+  background-size: 1500px;
+}
+.logo {
+  position: relative;
+  width: 120px;
+  height: 100px;
+
+}
+.logo img {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  right: 12px;
+}
+
+/* Navigation */
+.main-menu {
+  font-weight: 400;
+}
+button {
+  margin-right: 20px;
+}
+nav {
+  height: 100px;
+}
+.main-menu ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-left: 1px solid rgba(202, 204, 202, 0.6);
+  line-height: 100px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.main-menu ul li a {
+  text-decoration: none;
+  color: #888;
+}
+.main-menu ul li a:hover {
+  color: #9ed034;
+}
+.main-menu ul li.active {
+  background: #9ed034;
+  border: none;
+}
+.main-menu ul li.active a {
+  color: #fff;
+}
+.navbar-main {
+  margin: 0 auto;
+  background-color: rgb(255, 255, 255, 0.8) !important;
+  width: 60%;
+}
+
+.navbar-expand-lg {
+  justify-content: flex-end;
+}
+/* Main */
+main {
+  padding: 3em 6em 3em 5.5em;
+  margin: 2em 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+main h1 {
+  font-size: 2.5em;
+  padding-bottom: 0.5em;
+  color: #9ed034;
+  text-align: center;
+}
+main h2 {
+  font-size: 1.7em;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+
+/* Partners */
+section {
+  /* width: 100%; */
+  background-color: #4288c3;
+}
+section #partners {
+  /* width: 1200px; */
+  padding: 2em 0 2em 0;
+  margin: 0 auto;
+  text-align: center;
+}
+section #partners .partner {
+  display: inline-block;
+  margin: 0 0.75em;
+  padding: 1.3em 1.5em;
+  background-color: #fff;
+  border-radius: 50%;
+}
+section #partners .partner img {
+  width: 90px;
+  height: 90px;
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  height: 155px;
+  padding-bottom: 1em;
+  background-color: #ecfab8;
+}
+footer #nondisclaimer .copy {
+  padding: 3.5em 3.5em 3.5em 13em;
+  float: left;
+  font-size: 0.9em;
+}
+footer #nondisclaimer .social {
+  padding: 2.5em;
+  margin-right: 9.25em;
+  float: right;
+}
+footer #disclaimer {
+  clear: both;
+  background-color:#ecfab8;
+  padding-bottom:1em;
+}
+
+footer #disclaimer p {
+  font-size: 0.85em;
+  text-align: center;
+}
+footer #nondisclaimer .social .fa {
+  vertical-align: middle;
+  font-size: 15px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 15px 3px;
+  border-radius: 50%;
+  line-height: 30px !important;
+
+  /*  */
+}
+footer #nondisclaimer .social .fa:hover {
+  opacity: 0.7;
+}
+footer #nondisclaimer .social .fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+footer #nondisclaimer .social .fa-twitter {
+  background: #55acee;
+  color: white;
+}
+
+footer #nondisclaimer .social .fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+/* Home */
+#home #timeofday {
+  height: 2.8em;
+  background: linear-gradient(
+    0deg,
+    rgba(251, 215, 139, 1) 0%,
+    rgba(118, 213, 245, 1) 100%
+  );
+  text-align: center;
+  padding-top: 1.2em;
+  color: #3a3a3a;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#home #timeofday #clock {
+  font-weight: 400;
+  color: #125688;
+}
+#home .main-col-content {
+  border: 1px solid #c0c0c0;
+  padding: 25px;
+  min-height: 17em;
+}
+
+/* Cliffs */
+#cliffs main .cliffs {
+  background: none;
+  width: 90%;
+  margin: 0 auto;
+}
+
+#cliffs main .cliffs .site {
+  width: 45%;
+  display: inline-block;
+  margin: 2.5em 1.2em 0 1.2em;
+}
+
+#cliffs main .cliffs .site h3 {
+  background: #852b1b;
+  height: 2em;
+  color: #fff;
+  text-align: center;
+  padding-top: 0.55em;
+  margin: 0;
+}
+
+#cliffs main .cliffs .site img {
+  width: 100%;
+  height: auto;
+}
+
+/* Activities */
+table {
+  width: 1000px;
+  margin: 4em auto 0 auto;
+}
+
+caption {
+  background: #852b1b;
+  height: 40px;
+  color: #fff;
+  font-size: 1.3em;
+  font-weight: bold;
+  padding-top: 1em;
+}
+thead {
+  background: #bde1ff;
+}
+tbody {
+  background: #eeffe6;
+  text-align: center;
+}
+th,
+td {
+  width: 225px;
+  height: 75px;
+  vertical-align: middle;
+  border: solid 1px #852b1b;
+}
+th:first-child {
+  width: 125px;
+  height: 50px;
+  background: #4977d1;
+  color: #fff;
+}
+td:first-child {
+  font-weight: bold;
+  background: #bde1ff;
+}
+
+/* Contact Page */
+.contactinfo {
+  margin: 2em 0 1em 0;
+}
+
+.contactinfo .phone {
+  margin: 0 0 0.75em 0;
+}
+
+.contactinfo .phone span:first-child,
+.contactinfo .email span:first-child {
+  font-weight: bold;
+}
+
+form fieldset {
+  border: solid 2px #9ed034;
+}
+
+form fieldset legend {
+  color: #4977d1;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0 0.5em;
+}
+
+form .textbox,
+form .radios,
+form .selectmenu,
+form .commentbox,
+form .button {
+  margin: 1.5em 0 1.5em 2em;
+}
+
+form label {
+  font-weight: bold;
+}
+
+form .textbox input {
+  margin: 0 0 1em 0;
+  display: block;
+  height: 2em;
+  width: 50%;
+}
+
+form .selectmenu select {
+  width: 12em;
+  padding-left: 3em;
+}
+
+form .commentbox textarea {
+  display: block;
+  height: 17em;
+  width: 50%;
+  resize: none;
+}
+
+form .randomcode {
+  width: 51.5%;
+  text-align: right;
+}
+
+form .randomcode input {
+  margin-right: 1em;
+  height: 2em;
+}
+
+form .randomcode #codes {
+  display: inline;
+  padding: 1em;
+  background-color: #c0c0c0;
+}
+
+form .button {
+  width: 49%;
+  text-align: right;
+}
+
+form .button input {
+  width: 8em;
+  height: 2.5em;
+  font-size: 1.2em;
+  font-weight: bold;
+  /*background-color: rgb(73, 119, 209, 0.4);*/
+  color: rgba(255, 255, 255, 0.5);
+  border: none;
+}
