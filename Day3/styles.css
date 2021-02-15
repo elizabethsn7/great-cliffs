@@ -229,11 +229,12 @@ footer #nondisclaimer .social .fa-instagram {
   margin: 0;
 }
 
-/* #cliffs main .cliffs .site img {
-  width: 100%;
-  height: auto;
-} */
-
+.card-body {
+  padding: 0px 0px 10px !important;
+}
+.card-text {
+  padding: 16px;
+}
 /* Activities */
 table {
   width: 1000px;
@@ -374,7 +375,4 @@ fieldset {
 }
 .modal-button {
   margin: 10px 0;
-}
-.row .displaySelected {
-  padding-left: 40px !important;
 }
